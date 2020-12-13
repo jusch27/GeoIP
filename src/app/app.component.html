@@ -4,6 +4,7 @@
             <th>Provider</th>
             <th>Breitengrad</th>
             <th>Längengrad</th>
+            <th>City</th>
         </tr>
     </thead>
     <tbody>
@@ -11,6 +12,24 @@
             <td>{{coord.provider}}</td>
             <td>{{coord.latitude}}</td>
             <td>{{coord.longitute}}</td>
+            <td>{{coord.city}}</td>
         </tr>
     </tbody>
 </table>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Provider</th>
+            <th>Adresse</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let add of addresses">
+            <td>{{add.provider}}</td>
+            <td>{{add.address}}</td>
+        </tr>
+    </tbody>
+</table>
+
